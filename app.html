@@ -1,0 +1,16 @@
+<div class="app-window" id="TipApp">
+  <div class="app-header"><span class="app-title">💵 Tip Calculator</span><div class="app-controls"><button class="minimize-btn">–</button><button class="close-btn">×</button></div></div>
+  <div class="app-content">
+    <div class="tp">
+      <label>Bill amount <input id="tp-bill" type="number" min="0" step="0.01" value="50"></label>
+      <label>Tip: <b id="tp-pctv">18</b>%<input id="tp-pct" type="range" min="0" max="30" value="18"></label>
+      <label>Split between <input id="tp-split" type="number" min="1" value="1"> people</label>
+      <div class="tp-rows">
+        <div class="tp-row"><span>Tip</span><b id="tp-tip">$9.00</b></div>
+        <div class="tp-row"><span>Total</span><b id="tp-total">$59.00</b></div>
+        <div class="tp-row big"><span>Per person</span><b id="tp-each">$59.00</b></div>
+      </div>
+    </div>
+  </div>
+  <div class="resize-handle"></div>
+</div>
